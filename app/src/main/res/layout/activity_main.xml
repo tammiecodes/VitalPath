@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#101827">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/app_logo"
+        android:background="@drawable/logo_background"
+        android:padding="12dp"
+        android:clipToOutline="true"
+        android:contentDescription="Telehealth Companion Logo"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:elevation="6dp"/>
+
+    <!-- App Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vital Path"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your health, organized in one place."
+        android:textSize="16sp"
+        android:textColor="#B0BCCC"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3078E8"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3078E8"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
