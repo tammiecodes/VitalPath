@@ -18,7 +18,7 @@
             android:backgroundTint="#3078E8" android:textColor="#FFFFFF"
             android:layout_marginTop="20dp" />
         <Button android:id="@+id/btnMedicationReminders" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:text="Medication Reminders (Later)"
+            android:layout_height="wrap_content" android:text="Medication Reminders"
             android:backgroundTint="#3078E8" android:textColor="#FFFFFF" />
         <Button android:id="@+id/btnBackMedications" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Back"

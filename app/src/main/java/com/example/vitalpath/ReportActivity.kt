@@ -131,6 +131,26 @@ class ReportActivity : ComponentActivity() {
         line("Vital Path is a prototype personal tracking app, not a medical record verified by a clinician.")
         line("Do not distribute without the patient's permission. Do not use this report as a diagnosis.")
 
+
+        y += 25f
+
+        line("IMPORTANT MEDICAL INFORMATION", strong)
+
+        line("This report contains patient-entered health information collected through Vital Path. " +
+                "It is provided to support discussions with qualified healthcare professionals " +
+                "and is not a diagnosis, medical assessment, or treatment recommendation.")
+
+        y += 10f
+
+        line("Vital Path is a supplementary health tracking tool and does not replace " +
+                "professional medical advice, diagnosis, or treatment.")
+
+        y += 10f
+
+        line("Vital Path does not provide emergency monitoring, automatically contact " +
+                "healthcare professionals, or summon emergency services.")
+
+
         newPage()
         line("Patient-reported health summary", heading, 16f)
         line("Dates: $start to $end")

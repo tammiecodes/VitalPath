@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="16dp"
+    android:background="#30232C">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠ Medical Disclaimer"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#F28B96"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vital Path is a supplementary health tracking tool. It does not replace professional medical advice, diagnosis, or treatment."
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you are experiencing a medical emergency, call 911 immediately (in the U.S.) or your local emergency number."
+        android:textColor="#FFD1D5"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -7,6 +7,12 @@
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="Daily Check-In" android:textColor="#FFFFFF" android:textSize="28sp"
             android:textStyle="bold" android:layout_marginTop="24dp" />
+        <include
+            layout="@layout/view_medical_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
         <TextView android:id="@+id/txtCheckInDate" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Today"
             android:textColor="#B0BCCC" android:layout_marginTop="12dp" />
