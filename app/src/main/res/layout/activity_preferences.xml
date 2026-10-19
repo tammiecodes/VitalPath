@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 3 of 3"
+            android:textColor="#6CB7FF"
+            android:textSize="14sp"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tracking Preferences"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize what you would like to track."
+            android:textColor="#B0BCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp"/>
+
+        <CheckBox
+            android:id="@+id/cbVitals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vital Signs"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medications"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physical Activity"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbLifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lifestyle Factors"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reminders"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Switch
+            android:id="@+id/switchDailyReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Check-In Reminder"
+            android:textColor="#FFFFFF"
+            android:thumbTint="#3078E8"/>
+
+        <Switch
+            android:id="@+id/switchMedicationReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medication Reminders"
+            android:textColor="#FFFFFF"
+            android:thumbTint="#3078E8"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnFinishSetup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finish Setup"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3078E8"
+            android:layout_marginTop="36dp"/>
+
+        <Button
+            android:id="@+id/btnBackPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#34465C"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

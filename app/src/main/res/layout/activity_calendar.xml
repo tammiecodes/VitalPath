@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#101827">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Health Calendar"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a date to view or create a check-in."
+        android:textColor="#B0BCCC"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"/>
+
+    <CalendarView
+        android:id="@+id/healthCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/Theme.Material.Light"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txtSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date: Today"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnOpenCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Daily Check-In"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3078E8"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnBackCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#34465C"/>
+
+</LinearLayout>

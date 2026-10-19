@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import android.content.Intent
 
 class RegisterActivity : ComponentActivity() {
 
@@ -15,12 +16,10 @@ class RegisterActivity : ComponentActivity() {
         val continueButton = findViewById<Button>(R.id.btnContinue)
         val backButton = findViewById<Button>(R.id.btnBack)
 
+
         continueButton.setOnClickListener {
-            Toast.makeText(
-                this,
-                "Health Setup coming next!",
-                Toast.LENGTH_SHORT
-            ).show()
+            val intent = Intent(this, ConditionsActivity::class.java)
+            startActivity(intent)
         }
 
         backButton.setOnClickListener {

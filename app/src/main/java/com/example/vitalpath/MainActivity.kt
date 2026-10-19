@@ -16,12 +16,10 @@ class MainActivity : ComponentActivity() {
         val loginButton = findViewById<Button>(R.id.btnLogin)
         val registerButton = findViewById<Button>(R.id.btnRegister)
 
+
         loginButton.setOnClickListener {
-            Toast.makeText(
-                this,
-                "Login screen coming next!",
-                Toast.LENGTH_SHORT
-            ).show()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
 

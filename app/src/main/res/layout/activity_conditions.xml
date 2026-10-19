@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 1 of 3"
+            android:textColor="#6CB7FF"
+            android:textSize="14sp"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Health Conditions"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the conditions you'd like to track."
+            android:textColor="#B0BCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp"/>
+
+        <CheckBox
+            android:id="@+id/cbDiabetes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diabetes"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbHypertension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hypertension"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbAsthma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asthma"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbHeartDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Disease"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <CheckBox
+            android:id="@+id/cbOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8"/>
+
+        <Button
+            android:id="@+id/btnNextConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3078E8"
+            android:layout_marginTop="36dp"/>
+
+        <Button
+            android:id="@+id/btnBackConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#34465C"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
