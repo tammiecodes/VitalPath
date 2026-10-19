@@ -1,60 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#101827">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Health Calendar"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="24dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select a date to view or create a check-in."
-        android:textColor="#B0BCCC"
-        android:textSize="16sp"
-        android:layout_marginTop="12dp"/>
-
-    <CalendarView
-        android:id="@+id/healthCalendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@android:style/Theme.Material.Light"
-        android:layout_marginTop="24dp"/>
-
-    <TextView
-        android:id="@+id/txtSelectedDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Selected Date: Today"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="24dp"/>
-
-    <Button
-        android:id="@+id/btnOpenCheckIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Open Daily Check-In"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#3078E8"
-        android:layout_marginTop="24dp"/>
-
-    <Button
-        android:id="@+id/btnBackCalendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#34465C"/>
-
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101827" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Health Calendar" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginTop="24dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Choose a date to open that day's check-in."
+            android:textColor="#B0BCCC" android:layout_marginTop="12dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/calendar_surface" android:padding="10dp"
+            android:layout_marginTop="24dp">
+            <CalendarView android:id="@+id/healthCalendar"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:theme="@android:style/Theme.Material.Light"
+                android:background="#F4F7FD" />
+        </FrameLayout>
+        <TextView android:id="@+id/txtSelectedDate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Selected Date: Today"
+            android:textSize="18sp" android:textColor="#FFFFFF" android:layout_marginTop="24dp" />
+        <Button android:id="@+id/btnOpenCheckIn" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Open Daily Check-In"
+            android:textColor="#FFFFFF" android:backgroundTint="#3078E8"
+            android:layout_marginTop="24dp" />
+        <Button android:id="@+id/btnBackCalendar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Back"
+            android:textColor="#FFFFFF" android:backgroundTint="#34465C" />
+    </LinearLayout>
+</ScrollView>

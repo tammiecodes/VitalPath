@@ -1,76 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#101827"
-    android:fillViewport="true">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="My Medications"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Keep track of your prescriptions."
-            android:textSize="16sp"
-            android:textColor="#B0BCCC"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="24dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Current Medications"
-            android:textSize="21sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No medications added yet."
-            android:textSize="16sp"
-            android:textColor="#B0BCCC"
-            android:padding="24dp"/>
-
-        <Button
-            android:id="@+id/btnAddMedication"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add Medication"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="20dp"/>
-
-        <Button
-            android:id="@+id/btnMedicationReminders"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Medication Reminders"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"/>
-
-        <Button
-            android:id="@+id/btnBackMedications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#34465C"
-            android:layout_marginTop="24dp"/>
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101827" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="My Medications" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginTop="24dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Add medication details for your personal health report."
+            android:textColor="#B0BCCC" android:textSize="16sp" android:layout_marginTop="12dp" />
+        <LinearLayout android:id="@+id/medicationList" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="14dp" android:background="#1B2A40" android:layout_marginTop="24dp" />
+        <Button android:id="@+id/btnAddMedication" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Add Medication"
+            android:backgroundTint="#3078E8" android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+        <Button android:id="@+id/btnMedicationReminders" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Medication Reminders (Later)"
+            android:backgroundTint="#3078E8" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnBackMedications" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Back"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
     </LinearLayout>
 </ScrollView>
