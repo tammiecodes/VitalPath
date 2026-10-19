@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101827" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Health Insights" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginTop="24dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Example trend flags based on manually recorded data. Not medical advice."
+            android:textColor="#B0BCCC" android:layout_marginTop="10dp"/>
+        <TextView android:id="@+id/txtInsights" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="18dp"
+            android:background="#1B2A40" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:lineSpacingExtra="5dp"
+            android:layout_marginTop="22dp"/>
+        <Button android:id="@+id/btnBackInsights" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Back to Summary"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF"
+            android:layout_marginTop="22dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -143,6 +143,19 @@ class ReportActivity : ComponentActivity() {
             line("• ${med.optString("name")} | Dose: ${med.optString("dose", "Not specified")} | " +
                     "Schedule: ${med.optString("schedule", "Not specified")}")
         }
+        y += 8f
+        line("Medication dose confirmations (selected report dates)", strong)
+        val doseEvents = store.doseEvents().filter { event ->
+            val localDate = java.time.Instant.ofEpochMilli(event.optLong("scheduledMs"))
+                .atZone(java.time.ZoneId.systemDefault()).toLocalDate()
+            !localDate.isBefore(start) && !localDate.isAfter(end)
+        }
+        if (doseEvents.isEmpty()) line("No doses explicitly marked taken or missed during this period.")
+        doseEvents.forEach { event ->
+            val whenDue = java.time.Instant.ofEpochMilli(event.optLong("scheduledMs"))
+                .atZone(java.time.ZoneId.systemDefault()).toLocalDate()
+            line("$whenDue | ${event.optString("medName")} | ${event.optString("status")}")
+        }
         y += 12f
         val logs = entries()
         line("Daily check-ins (${logs.size})", strong)

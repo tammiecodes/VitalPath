@@ -1,174 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#101827"
-    android:fillViewport="true">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Daily Check-In"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp"/>
-
-        <TextView
-            android:id="@+id/txtCheckInDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="How are you feeling today?"
-            android:textSize="16sp"
-            android:textColor="#B0BCCC"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="24dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Symptoms"
-            android:textSize="21sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
-
-        <CheckBox
-            android:id="@+id/cbCheckFatigue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fatigue"
-            android:textColor="#FFFFFF"
-            android:buttonTint="#3078E8"/>
-
-        <CheckBox
-            android:id="@+id/cbCheckHeadache"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Headache"
-            android:textColor="#FFFFFF"
-            android:buttonTint="#3078E8"/>
-
-        <CheckBox
-            android:id="@+id/cbCheckDizziness"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Dizziness"
-            android:textColor="#FFFFFF"
-            android:buttonTint="#3078E8"/>
-
-        <CheckBox
-            android:id="@+id/cbCheckBreathing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Shortness of Breath"
-            android:textColor="#FFFFFF"
-            android:buttonTint="#3078E8"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Overall Symptom Severity"
-            android:textSize="18sp"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp"/>
-
-        <RatingBar
-            android:id="@+id/ratingSeverity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:stepSize="1"
-            android:rating="0"
-            android:progressTint="#3078E8"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vital Signs"
-            android:textSize="21sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp"/>
-
-        <EditText
-            android:id="@+id/etHeartRate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Heart Rate (BPM)"
-            android:inputType="number"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B0BCCC"/>
-
-        <EditText
-            android:id="@+id/etBloodPressure"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Blood Pressure (e.g. 120/80)"
-            android:inputType="text"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B0BCCC"/>
-
-        <EditText
-            android:id="@+id/etBloodSugar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Blood Sugar (mg/dL)"
-            android:inputType="numberDecimal"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B0BCCC"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lifestyle"
-            android:textSize="21sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="24dp"/>
-
-        <EditText
-            android:id="@+id/etSleepHours"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Hours Slept"
-            android:inputType="numberDecimal"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B0BCCC"/>
-
-        <EditText
-            android:id="@+id/etCheckInNotes"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:gravity="top"
-            android:hint="Additional notes..."
-            android:inputType="textMultiLine"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#B0BCCC"
-            android:layout_marginTop="16dp"/>
-
-        <Button
-            android:id="@+id/btnSaveCheckIn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save Check-In"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="24dp"/>
-
-        <Button
-            android:id="@+id/btnBackCheckIn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#34465C"/>
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101827" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Daily Check-In" android:textColor="#FFFFFF" android:textSize="28sp"
+            android:textStyle="bold" android:layout_marginTop="24dp" />
+        <TextView android:id="@+id/txtCheckInDate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Today"
+            android:textColor="#B0BCCC" android:layout_marginTop="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Symptoms" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:layout_marginTop="24dp" />
+        <CheckBox android:id="@+id/cbCheckFatigue" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Fatigue" android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8" />
+        <CheckBox android:id="@+id/cbCheckHeadache" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Headache" android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8" />
+        <CheckBox android:id="@+id/cbCheckDizziness" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Dizziness" android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8" />
+        <CheckBox android:id="@+id/cbCheckBreathing" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Shortness of Breath" android:textColor="#FFFFFF"
+            android:buttonTint="#3078E8" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Overall Symptom Severity" android:textColor="#FFFFFF"
+            android:textSize="18sp" android:layout_marginTop="20dp" />
+        <RatingBar android:id="@+id/ratingSeverity" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"
+            android:rating="0" android:progressTint="#3078E8" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Tap a measurement to select a number (optional)"
+            android:textColor="#B0BCCC" android:layout_marginTop="24dp" />
+        <Button android:id="@+id/btnHeartRate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Heart Rate: Not entered"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnSystolic" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Systolic BP: Not entered"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnDiastolic" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Diastolic BP: Not entered"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnBloodSugar" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Blood Glucose: Not entered"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/btnSleepHours" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Sleep: Not entered"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
+        <EditText android:id="@+id/etCheckInNotes" android:layout_width="match_parent"
+            android:layout_height="110dp" android:gravity="top"
+            android:hint="Additional notes (optional)" android:inputType="textMultiLine"
+            android:textColor="#FFFFFF" android:textColorHint="#B0BCCC"
+            android:layout_marginTop="16dp" />
+        <Button android:id="@+id/btnSaveCheckIn" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Save Check-In"
+            android:backgroundTint="#3078E8" android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+        <Button android:id="@+id/btnBackCheckIn" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Back"
+            android:backgroundTint="#34465C" android:textColor="#FFFFFF" />
     </LinearLayout>
 </ScrollView>

@@ -31,7 +31,7 @@
             android:layout_marginTop="24dp" />
         <CheckBox android:id="@+id/cbPrivacyAck" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:buttonTint="#3078E8"
-            android:text="I have read the prototype privacy notice and understand this is not a secure patient portal."
+            android:text="I acknowledge the privacy notice and understand that this is a test-only app, not a secure patient portal."
             android:textColor="#FFFFFF" />
         <Button android:id="@+id/btnContinue" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Create Account"

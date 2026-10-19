@@ -30,7 +30,9 @@
             android:name=".DashboardActivity"
             android:exported="false" />
 
-        <!-- Main Dashboard Sections -->
+        <activity
+            android:name=".InsightsActivity"
+            android:exported="false" />
 
         <activity
             android:name=".CheckInActivity"

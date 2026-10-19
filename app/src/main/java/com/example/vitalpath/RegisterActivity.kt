@@ -9,22 +9,71 @@ import android.widget.EditText
 import androidx.activity.ComponentActivity
 
 class RegisterActivity : ComponentActivity() {
+    // DRAFT FOR TEAM REVIEW: Adapt legal contact, retention and deployment disclosures before public use.
     private val notice = """
-        VITAL PATH — PROTOTYPE PRIVACY & HEALTH DATA NOTICE
+        VITAL PATH — PRIVACY, HEALTH DATA & TERMS NOTICE
+        Version: Prototype draft 1.0 | October 2026
 
-        Vital Path helps users record symptoms, vitals and medications. This development version
-        saves manual tracking data in local, unencrypted app storage. It does not implement real
-        authentication or secure cloud accounts. Do not enter real patient health information.
+        1. PURPOSE
+        Vital Path helps individuals manually track symptoms, vital signs, medications,
+        and daily health observations. It provides summaries that individuals may choose
+        to bring to healthcare appointments. It does not diagnose, prescribe, monitor
+        emergencies, or replace professional medical care.
 
-        This application is being designed to address applicable privacy and security requirements,
-        including HIPAA where applicable. HIPAA compliance has NOT been established or certified.
-        Acknowledgment confirms you saw this prototype notice, not a HIPAA disclosure authorization.
+        2. INFORMATION ENTERED
+        The prototype may store a profile name and email; health conditions and symptoms
+        selected by the user; daily logs, blood pressure, heart rate, blood glucose,
+        sleep, medications, and notes; and the date the privacy notice was acknowledged.
+        Some planned features are not yet connected or implemented.
 
-        Future integration: We plan to support Google Health Connect. No health data is accessed
-        from Health Connect now. Later, permission to specific data types will be requested through
-        Android's Health Connect permission interface and can be managed or revoked there.
+        3. WHERE YOUR DATA GOES — CURRENT PROTOTYPE
+        Manual health entries and medications are stored in an unencrypted JSON file
+        within this device's app-private storage. Demo profile information is held in
+        local application preferences. There is no implemented backend account login,
+        cloud sync, clinician portal, or automatic transmission to physicians.
+        Do not use real patient information in this development build.
 
-        PDF exports may include sensitive information; protect them and choose recipients carefully.
+        4. SHARING & EXPORTS
+        The user may choose to export a PDF report using Android's document picker.
+        Exported PDF files are not encrypted by this app and can be shared, copied, or
+        backed up by the user or other software. Share only with recipients you trust.
+        This prototype does not automatically share records with clinics or advertisers.
+
+        5. HIPAA AND OTHER PRIVACY RULES
+        HIPAA governs certain covered entities and business associates; its application
+        to a standalone personal health app depends on the organization's role and
+        relationships. Vital Path is being designed with HIPAA privacy and security
+        requirements in mind where applicable, but HIPAA compliance has not been
+        verified or established. Other privacy and consumer protection rules may apply.
+        This notice is not a HIPAA authorization or an official Notice of Privacy
+        Practices from a healthcare provider.
+
+        6. GOOGLE HEALTH CONNECT — FUTURE INTEGRATION
+        Vital Path plans to support Google Health Connect. No Health Connect data is
+        accessed by this prototype. Before any import, you will receive information
+        about the specific data requested and be asked for separate permissions through
+        Health Connect. You can manage or revoke those permissions in Android settings.
+        Acknowledging this notice does not grant Health Connect access.
+
+        7. CONTROL, DELETION & RETENTION
+        Entries persist locally until changed, removed through available app controls,
+        or the app's stored data is cleared or uninstalled (subject to device behavior).
+        This build does not yet offer complete in-app deletion or data portability tools.
+        Do not rely on it as your only copy of important medical information.
+
+        8. SECURITY STATUS & LIMITATIONS
+        This prototype lacks production-grade authentication, encryption, access
+        controls, account separation, audited data handling, and recovery procedures.
+        It is suitable for synthetic test data only.
+
+        9. USER ACKNOWLEDGMENT
+        Selecting the acknowledgment checkbox confirms that you have read this notice
+        and understand the prototype's limitations. It does not waive privacy rights,
+        establish HIPAA compliance, or authorize sharing with healthcare providers.
+
+        Before real-world deployment, the team must complete a reviewed privacy policy,
+        legal and security assessment, contact and complaint procedures, and product
+        terms that match the actual services and third-party integrations.
     """.trimIndent()
 
     override fun onCreate(savedInstanceState: Bundle?) {

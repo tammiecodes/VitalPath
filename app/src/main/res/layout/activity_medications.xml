@@ -8,7 +8,7 @@
             android:text="My Medications" android:textSize="28sp" android:textStyle="bold"
             android:textColor="#FFFFFF" android:layout_marginTop="24dp" />
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Add medication details for your personal health report."
+            android:text="Record scheduled doses, mark taken or missed, and view your estimated next dose."
             android:textColor="#B0BCCC" android:textSize="16sp" android:layout_marginTop="12dp" />
         <LinearLayout android:id="@+id/medicationList" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:orientation="vertical"

@@ -1,5 +1,6 @@
 package com.example.vitalpath
 
+import android.content.Intent
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.widget.Button
@@ -22,6 +23,9 @@ class SummaryActivity : ComponentActivity() {
         }
         findViewById<Button>(R.id.btnEndDate).setOnClickListener {
             pick(end) { end = it; render() }
+        }
+        findViewById<Button>(R.id.btnOpenInsights).setOnClickListener {
+            startActivity(Intent(this, InsightsActivity::class.java))
         }
         findViewById<Button>(R.id.btnBackSummary).setOnClickListener { finish() }
     }
