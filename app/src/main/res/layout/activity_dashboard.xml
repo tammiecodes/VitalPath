@@ -10,15 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vital Path"
+            android:text="VITAL PATH"
             android:textColor="#6CB7FF"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold"
+            android:letterSpacing="0.12"
             android:layout_marginTop="24dp"/>
 
         <TextView
@@ -26,89 +27,157 @@
             android:layout_height="wrap_content"
             android:text="Your Health Dashboard"
             android:textColor="#FFFFFF"
-            android:textSize="28sp"
+            android:textSize="27sp"
             android:textStyle="bold"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Stay on top of your health, one day at a time."
             android:textColor="#B0BCCC"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="28dp"/>
-
+            android:layout_marginBottom="12dp"/>
 
         <include
             layout="@layout/view_medical_disclaimer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="28dp"/>
+            android:layout_height="wrap_content"/>
 
-
+        <!-- Full-width featured action -->
         <Button
-            android:id="@+id/btnDailyCheckIn"
+            android:id="@+id/btnHealthConnect"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Daily Check-In"
+            android:layout_height="72dp"
+            android:text="♥  CONNECT HEALTH DATA"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"/>
-
-        <Button
-            android:id="@+id/btnCalendar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calendar"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
+            android:backgroundTint="@null"
+            android:background="@drawable/dashboard_button_bg"
             android:layout_marginTop="12dp"/>
 
-        <Button
-            android:id="@+id/btnMedicationsPage"
+        <!-- Row 1 -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medications"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="12dp"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
 
-        <Button
-            android:id="@+id/btnHealthSummary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Health Summary"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnDailyCheckIn"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="✎\nDaily Check-In"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginEnd="6dp"/>
 
-        <Button
-            android:id="@+id/btnDoctorReport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Doctor Visit Report"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnCalendar"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="▦\nCalendar"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btnProfile"
+        <!-- Row 2 -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile &amp; Settings"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#3078E8"
-            android:layout_marginTop="12dp"/>
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnMedicationsPage"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="✚\nMedications"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/btnHealthSummary"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="▥\nHealth Summary"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnDoctorReport"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="▤\nDoctor Visit Report"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:text="⚙\nProfile &amp; Settings"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:background="@drawable/dashboard_button_bg"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:text="Log Out"
+            android:textAllCaps="false"
+            android:textSize="15sp"
             android:textColor="#FFFFFF"
             android:backgroundTint="#34465C"
-            android:layout_marginTop="32dp"/>
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="24dp"/>
 
     </LinearLayout>
 </ScrollView>

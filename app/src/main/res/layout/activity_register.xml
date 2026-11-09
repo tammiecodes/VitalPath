@@ -8,7 +8,7 @@
             android:text="Create Your Account" android:textSize="28sp"
             android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginTop="40dp" />
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Start your health tracking journey (demo only)."
+            android:text="Start your health tracking journey."
             android:textSize="16sp" android:textColor="#B0BCCC"
             android:layout_marginTop="12dp" android:layout_marginBottom="28dp" />
         <EditText android:id="@+id/etName" android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:singleLine="true" android:textColor="#FFFFFF" android:textColorHint="#B0BCCC"
             android:layout_marginTop="20dp" />
         <EditText android:id="@+id/etPassword" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:hint="Password (not used in demo)"
+            android:layout_height="wrap_content" android:hint="Password"
             android:inputType="textPassword" android:autofillHints="newPassword"
             android:singleLine="true" android:textColor="#FFFFFF" android:textColorHint="#B0BCCC"
             android:layout_marginTop="20dp" />
@@ -31,7 +31,7 @@
             android:layout_marginTop="24dp" />
         <CheckBox android:id="@+id/cbPrivacyAck" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:buttonTint="#3078E8"
-            android:text="I acknowledge the privacy notice and understand that this is a test-only app, not a secure patient portal."
+            android:text="I acknowledge that I have read and understand the Vital Path Privacy Notice and understand that Vital Path is a supplementary health tracking tool, not a substitute for professional medical care."
             android:textColor="#FFFFFF" />
         <Button android:id="@+id/btnContinue" android:layout_width="match_parent"
             android:layout_height="wrap_content" android:text="Create Account"

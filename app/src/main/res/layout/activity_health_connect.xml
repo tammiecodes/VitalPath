@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#101827">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Health Connect"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import supported heart-rate measurements into Vital Path."
+            android:textColor="#B0BCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/txtHealthStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not connected"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="#1B2A40"/>
+
+        <TextView
+            android:id="@+id/txtHeartRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate: No data"
+            android:textColor="#76B7FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtHeartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No measurements imported"
+            android:textColor="#B0BCCC"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnConnectHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect Health Data"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3078E8"
+            android:layout_marginTop="32dp"/>
+
+        <Button
+            android:id="@+id/btnRefreshHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Heart Rate"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3078E8"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Connect shares data only with your permission. Vital Path does not continuously monitor your health or provide emergency alerts."
+            android:textColor="#B0BCCC"
+            android:textSize="13sp"
+            android:layout_marginTop="24dp"/>
+
+        <Button
+            android:id="@+id/btnBackHealth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#34465C"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

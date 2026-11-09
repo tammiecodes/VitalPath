@@ -53,6 +53,14 @@ class DashboardActivity : ComponentActivity() {
                 )
             }
 
+        findViewById<Button>(R.id.btnHealthConnect)
+            .setOnClickListener {
+                startActivity(
+                    Intent(this, HealthConnectActivity::class.java)
+                )
+            }
+
+
         findViewById<Button>(R.id.btnLogout)
             .setOnClickListener {
                 val intent = Intent(
