@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625354443396",
+    "project_id": "vitalpath-4d0de",
+    "storage_bucket": "vitalpath-4d0de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625354443396:android:76f64f77ca9831003b10d1",
+        "android_client_info": {
+          "package_name": "com.example.vitalpath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0LMCOGINB4fHquVV_qem6f-09gWO1jW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

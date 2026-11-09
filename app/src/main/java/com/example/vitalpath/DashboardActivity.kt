@@ -9,7 +9,17 @@ class DashboardActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_dashboard)
+
+        findViewById<Button>(R.id.btnFitbitConnect)
+            .setOnClickListener {
+                startActivity(
+                    Intent(this, FitbitActivity::class.java)
+                )
+            }
+
+
 
         findViewById<Button>(R.id.btnDailyCheckIn)
             .setOnClickListener {

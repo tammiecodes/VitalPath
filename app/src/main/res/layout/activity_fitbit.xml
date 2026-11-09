@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#101827">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect Fitbit"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect your Google Health account to access heart-rate measurements synced from your Fitbit."
+        android:textColor="#B0BCCC"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/txtFitbitStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not connected"
+        android:textColor="#76B7FF"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnAuthorizeFitbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect Google Health"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3078E8"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txtFitbitHeartRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate: No reading yet"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txtFitbitHeartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Fitbit measurement loaded"
+        android:textColor="#B0BCCC"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSyncFitbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync Latest Heart Rate"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3078E8"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/btnBackFitbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#34465C"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
